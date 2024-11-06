@@ -20,8 +20,7 @@ echo "Creation de l image de l application Web"
 docker build -t image-from-jenkins .
 echo "Creation du conteneur correspondant"
 
-docker run -d -p 2020:80 --name container-from-jenkins image-
-from-jenkins
+docker run -d -p 2020:80 --name container-from-jenkins image-from-jenkins
 
 echo "Verification de la presence du conteneur sur Docker"
 docker ps
